@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy-Clone</title>
+
+    <link rel="stylesheet" href="swiggy.css">
+   <link rel="shortcut icon" href="https://www.indiaherald.com/images/hp-images/politics/Swiggy.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <main>
+ 
+        <!-- Header Part Left -->
+
+        <div class="main-header">
+
+            <div class="header-left">
+
+                <div class="hearder-inner-area">
+
+                <div class="heading">
+
+                    <div class="logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZsAAAB7CAMAAACVdd38AAAAkFBMVEX////8gBn8ewD8eQD8dwD8dQD8fxT8iiz9rHn9vpz/+vj8dAD8fhD8fhH8fAj/9vH+y679uo7/7N79q3T+1Lj/+fT+28X9pWv8kD/+x6X+4s/9nl38gAf/8+r+z7L8hB/+1L79soD+3sr+6Nn8izT9omT9vpb9toj8lkz8kkT9mlX9xKD8bQD8ijD8hCX9nFimDsJOAAAOzUlEQVR4nO1d6VrqOhSlSVq40JZ5EBlEBFEO+v5vd2mBZifZGQpo/TTr3/FQSLKSPe+0VvPw8Lg/muvF6/j9sIxmQf1ts+o8D6sekUeO6XZHQkrSOIqCIIqSlFDGJqtRs+qB/XWsVx8hiQMFCWGz/nPVo/vLeHpjJFKJOSFK2eHBH55qMDgw5MQIp4em+6pH+RexnrDEzEx+eGg0qHqkfw6r0HJmCnbYbl71YP8U1gF1YyZDyjpVj/cPYd/SWgAownHVI/4z6IelmDmCvrSrHvSfQHNXQp5dkEa9qsf9BzB8I+WpyZxRT85Xozm5ihpPzjdgdyU1R3Jib0t/KTZX6JoL4kPVo//V2LLrqQkCsql6/L8Yz61bqAkC5qNrX4ZZOZcTIcfbA1+E8dV2wAXxpOo5/FI8lw4HIAfnoepZ/E4cHHICVhBfSvAFeHC00VJ9KjTjZlX1PH4jAjdDgK62B1NqJ/RRz7uj43Zs6KJWa34YaCSvVc/k98FR25CsemNlMuhY1TP5dXh21DYk+/CriZvsZHncE+P0XtzEb1XP5ZdhOHOj5iTTjNwEzMej74qRa5DTgRvq/c+7ouEarnHgJn6veja/Cy+uMQEHboLUV+LeEW3nUJoLN2xd9Xx+E5zVzYmbrpkbr3Duib1zKjqPZVq4IY2q5/Ob0HD0bty4iXdVz+c34fGu3EQfTj+6HmxfV6/7p6/PlTYB7J+ejzrb1WrV3T9NSyY8htNsSqvX7WKk8fGa1qEoH5g4p25cuGEO5dHT/iyk5AjKwuUKoacNoP7vertVZ9/UPTJuhWe0ZuZhDQfjZcjygRGa905O7XM5z+h1whil5yfD5WaBjHvzLyzwD+NvxT/w76S2l86FAjZuopSRrnUe612Y8p+MSDhW5rFp8UFulS94Z6Gq1BqcghfxPwqxENVNw+o1CEuFpUhIWN87nLXmwyEkwgaPUkrHisE6ByuXPqrfM+dGWXLO77tGbIzcZF262XaxC4K90txDyEj6zJSb9cmL/AVrhiWKeCmKFG9142Y+Zti8IhpZo7cPEcUkT8r68mJsgdUVqmeyz0cQnlekJDejVn7s0wz5ET6e/pBMxt2Bk+5YId5UFMoLAM5yKO+/TYokioAjQMUlceLmgeqkQcQejUenN2E6uUNmUsNyM+IfVaPCPb4yhUEVlZNptfZzZ/vaaPT7/UZj1d12np7X7mpzizu6oXRywOGUE929nAUmLRgPpadSEaMLNxuTi0fqhmzugBrywFEoNY7BHCZ7kr4K2GTscqjqztzQm2s11poYRERE3Qj2UBSJX3GK/lFRDQ05l0yi2c6NrUQ/XmrJ0Wy1AjI5IImZSKNZ89pNrozenO2027l50+2y9FP7QXGxLwqTCB9fAJEm/aSVm+bB5kSkOr/ARk0QtMSdMgIPSCVjOzDjQjtsyvk3t2Cqn0sotlw/cLWZClb5JZxHhRLf92JiSq2PlRt794S8+y/oWMuU6bskewEDUQT/DywNmLCxAED8JWd7XwMhGxHH4MCmVJx/G5g08LgOL3+PAvDpOf+0Yv/YuFmpIStJyDONqaYT0GDkSsYECOuAQn8DCgou3zvO8bQoOqp/CZkP3RlM3YqfDsBOIbvHycX4PBpDsi8GTjOkjZuhsEGbhwSjpfybFm5G4gJHhLFZMKOM28U6ampLURnENCTR0V2jxQ+q1AiGcgCULLAz4cl3reTIkCo4+9DsY9Ox8gMOQzLJxrV+yedBYvUOiSc+Khii4zNLQMcPD20QxVW1cCN63jRejebD4bA93V+uvwh191t0hT2dsvdOr318sjcYnw1y+ok8BQUCiAuD4AwUE+2b+m6KiR9d4YZFH4EDfbYSh/XkaGmOkeeaQLKExf4CaihgxaL1+AxCxckycwPdwSBhW6ACRh/ZEmupmQvLxt6BGzYfZxOliOtfEyktlP4A2DJCZOVwa3fHBYSYE2tTsIbty59oIEcFTgC6iet9uMuTom+Be0OJWudj5KYpKMClROwjDVraW2EENS03Hx3tRg01wqYrjGVgW4sGqGsJlB0JMfrQa85N4V1tdPkeQGQR2x6Ie/VCKvfQkMyekRuoa5MPRSiP/2mpGUJqVENu1NJQIzqgZ8sF/Em0PwVBcSPMWc85CJPZm3UOatxGrD+9hD2A+clUnWfkBpZKUCTmpDdMF9CQRAK8BpMW/Oh5Gbg4EMzPmmjX3QgsvMoBC+HSJS7KOIAqOJsucvb8vOu49MN+3sTNHDgotFxPJPeokHCsGdA0zINVoItDMQrdswQ2WIYJwwJR+PZk/DDQ8NEp87KTogrngisegmaICDJxA0SaY07wAijS5CiRFe9cieQLxtdfXb87KhyzqBKsoiBm9b3JspPjNlPFoMxlHThNM+TrTNyAiZc8NlAbKi6VDWuocZ6hFlVpXtxN4ZhlGjwKp2lR8qov0u1IcRs1eZ7HnEEIuo98i4kbIDBouWJhoKMd0okygAN6XDEuDpBy8vnduLGNU43dEdrQrcoQumlDhdgMR3dmCHYddsGrgZsm2Pwl765oIAF9d8AFpyPEegWQBfnVsIlebBcQqqadTwBMHjUJFvc7GgkLQ7wmg4EbwDaIL/b+QyAPEZgCIRekW+xJjLouehrkYHwO9xI1C0KbZFhgNiF9wVOmYEcdpRenBpguDBCId80ZuAFyH8R6Bi2i4p/06AR1FglVn2yhQWz0Nge0JvZeQk22zhF0MXJiJQl4niv/5g9wPg7L4u90ALJqaFTCwM0UdfnQOteW9Cj3UeBpxdL7FOUG6+JM8RIlbc6rHFwapR/QOyeVioEcQIxFgI9Onws7/meN/e7IDXea3biJsG9156b2oWY0NRebuOcJjNBsf2lFltiPIXUnugwJHarWdKC1gr/m3ACZBqreSnAzUqamq1Ye3oeb0K3Bo4tUtYhZwAuwpuxsDlhbiqZlzlHf8BPvxA2wnkL+1xLcQGvi/EFdjuUu7mds9m445itC5VXHglKokZId/YW6frpCbAM3IMwPnnbiBpiQIC1Rhhs5UobOPwcqJcqiRJf0cP8hX6ovF2Hkq6cKtZPGVC+r0K2ByfcEzMfFsXXiZgsyGHzWZbgRMqDBuYEGxz0utGGlaj0Gb2KFJxYMQzyvkzWmxs51P27iZodV8zhxA+IsQFqU4kY0jk0xI0RKlIVctWfF9DME2x/VhUo46RIVkjWW9sdN3HSJ8r0ZN9EF/OtlbmDWkzt1s0R9VMuN4IBGsWGdbr/bzjUeC/sbngOQy8DCJoqRcnFittJ/aE1EEzewVKLwjkaz+gXcQJe5gdklHsYrHqxzI0bPDcyA6j+V4eYMm2M8diGEaOYxHx964YpkpBR92EPpnGtvazHm1mDaE3GP+I8r3MCSfSSOx/W3YdXBkqt1DgLc66JxaMNiEOsJiwQfC8xRmX8GSfpzN0gMr+lbGY3cwC+hqltu4AZGXuWK4ZojNwNnbm7VOA5R9nY/U/8x3KFw76DPCIk/YOqKdS6o65rDyE0PVmaqbV0GbgQrJVFu/b8zNzcGbjTRIIj92eckO65ygKOAnhuxZz4E0gMEbkzy1FwDJSQt6IsUkTNxI9yimcj3Yd6bm95NGsd6scCoXnx/Wr+sMVDpmvWFSUIhrQqdN0PeyMyNmBRKwg04f8MRj8wg++Zd0ITs8AD8+h4XlvfhBg/gO8J6WUrvH/CgEjbpDkaD7gvYDrqDB0JXYpvOI+qby7DUdUqZlJQtH7udxaKzHb8R8GIzhBvJL04o3a0ejk/uV5/LELim9+Gm1mGUqGW1BUzuKZpzFCBaXAmhxx+D36ibBI/bSKYUlxumMgVbrfpEilZFadaLd1wHYbaYvH2Qt3KcP0lJDFXkvbiptRer8XizGefoCzj+29BD5HBxmi1JFGoce/6c7MMUCtJUFmfjZm68HvYCVBeOXZTA3bixQB8RdfE7lX0mQG8FXyK2inNa2NemW9us/TdrbcMmAG6nuLzJ6bu4edKNxe1OdeM+04bIi9iV2mxxDgLGWJ79AntP4dThhZk4N7V3OzmVcxO6vcL4Uz8Vbb1+UVCOLO3ZJUOjpBc49OL2lrb2MKYT2dbX06WGhrJv4cb5Epuxzr8NTUGFkyeDva3y5Jgaex2detg3oenopEw/uoW2+z1DYnwB6vXcNJvz9XQ6Xfd4cFLHjXIHgBYPFFNZsflVBnlIEi2KzW04s9frdvfD6EMr2AgbmyIe8zHTaeGYHYwvDr6Km/ng9fFlFoYsQxjO3honVa/hxiEkwL96E8qGUczeLNxmoT7UFsvFndkOcb0zpXOQrkw5TY2lDduyrTcMuZkjoWxneaXzFdx0Xphk3ickfMsOj4abcpfbrhsxK1yAJD1OwWrjvZIgCtC8YJfY4t99dqkUo5ZA+XM/CGmanEcWxSkNZ48Ot8AcN9x2woBbk6SEscnWutygEq7lxk2nhZ3u3CXHudFnujVoPnc/P0h2L9BsMu44ENtrRZrXUg3DiJoLrxbdAtZAeXO6H78FNBsZWe76D1P3y0fng9VnPZ8Tm0023SeX7bp+LYZmKAuHwF+Fw7TcOBQMYmgO522XG81yTJZ1zf5dLWf3viE0G9nwqithm812iUldA7QdR8+Nwfr1uDfQ6mgtN6m/Efo7gb0NR8uNfwXetwJ7i1QeZ0a4KW0IeNyGOlJIjXNTtg/V41Yg5XN5S5XKzRVNWx634V0JQ+DcWHwLjy+A2ltJn2qqBRct/Zshvh9y2WQQfaxrz/JpckwNeNwXSodLRFO5L4P6dw9UAvuleldceuBxH7xa060t/6qbqmC75cZ7ndXBcCltBrfyDY+vgVmqqbXzHt8IU5+h9vZXj2+BwVYjJUoEPL4CW13JUlL3AYGqoWvJ8W+KrB6a+nKsjM/ju4HdV+SVzQ/BRi0pjUve0efxRRgit5N4z+aHQAkPyO/f8qgOUkck82G0H4QJNKSJ6z1cHt+BNsipxQfvdP4ojIrbKyJvB/w0FBFpXyDw87A7VXGExvYyj0rQzvt+mK9G+4nIWi69ifZDsWepL33+qdgQt3d4enw/hr7PxsPD48fjf02U5wm8qvl8AAAAAElFTkSuQmCC"
+                         alt="" width="200px"></div>
+
+                    <div class="header-btn">
+                        <button class="btn">Login</button>
+                        <button class="btn sign-up">Sign up</button>
+                    </div>
+
+                </div>
+
+
+                <div class="main-center">
+                    <article>
+                        <h1 class="main-heading">Game Night?</h1>
+
+                        <p class="sub-title">Order food from favourite restaurants near you.</p>
+                        
+                        <div class="search-area-border">
+
+                        <input class="search-location" type="text" placeholder="Enter your delivery location">
+
+                        <button class="search-btn">
+                            Locate Me
+                        </button>
+
+                        <button class="search-btn find-food">
+                            FIND FOOD
+                        </button>
+                    </div>
+
+                    <P class="city">Popular cities in India</P>
+
+                   <b><P>   Ahmedabad</b>  Bangalore <b> Chennai</b>
+                        Delhi <b> Gurgaon</b> Hyderabad <b> Kolkata</b>
+                        Mumbai <b>Pune</b>  & more.</P></b> 
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
+
+         <!-- Header Part Right -->
+
+            <div class="header-right">
+
+                <img class="header-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Breakfast2-new_men3ne" alt="">
+                 
+            </div>
+
+        </div>
+        
+    </main>
+
+
+
+
+
+
+    <!-- Middle Section -->
+
+    
+    <div class="middle-section">
+
+        <div class="middle-area">
+
+            <!-- logo 1 -->
+
+            <div class="number-one">
+
+               <img class="middle-img-one" src="./Images/img2.webp" alt="">
+
+               <div class="middle-heading-one">No Minimum Order</div>
+
+               <div class="middle-para-one"> 
+                    Order in for yourself or for the group,
+                    with no restrictions on order value</div>
+
+
+            </div>
+
+
+                <!-- logo 2 -->
+
+
+            <div class="number-two">
+
+
+                <img class="middle-img-two" src="./Images/img1.webp" alt="">
+ 
+                <div class="middle-heading-two">Live Order Tracking</div>
+ 
+                <div class="middle-para-two"> 
+                    Know where your order is at all times, from the restaurant to your doorstep</div>
+
+                
+            </div>
+
+
+            <div class="number-three">
+
+                <img class="middle-img-three" src="./Images/img3.webp" alt="">
+ 
+                <div class="middle-heading-three">Lightning-Fast Delivery</div>
+ 
+                <div class="middle-para-three"> 
+                    Experience Swiggy's superfast delivery 
+                    for food delivered fresh & on time</div>
+                
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Bottom Section-->
+
+
+    <div class="bottom-section">
+
+        <div class="bottom-area">
+
+         <div class="bottom-inner-area">
+
+            <div>
+                <h1 class="bottom-heading">Restaurants in your pocket</h1>
+            </div>
+
+            <div class="bottom-para">
+                Order from your favorite restaurants
+                 & track on the go, with the all-new Swiggy app.
+            </div>
+
+            <div class="img-button-area">
+                <img class="playstore-img" src="./Images/playstorebtn.webp" alt="">
+                <img class="apple-img" src="./Images/applebtnimg.webp" alt="">    
+            </div>
+
+        </div>
+
+            <div class="mobile-img-area">
+            <img src="./Images/pn1.webp" class="mobile-img-one" width="400px" height="500px" alt="">
+            
+            <img src="./Images/pn2.webp" class="mobile-img-two" width="400px" height="485px" alt="">
+        </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    
+
+    <!-- Footer Section -->
+
+
+
+    <div class="footer-section">
+
+        <div class="footer-area">
+
+
+
+            <div class="footer-one">
+
+                <div class="footer-company-area">
+
+                    <div class="company-title">COMPANY</div>
+
+                    <ul>
+                        <li class="ul-list">About Us</li>
+                        <li class="ul-list">Team</li>
+                        <li class="ul-list">Careers</li>
+                        <li class="ul-list">Swiggy Blog</li>
+                        <li class="ul-list">Bug Bounty</li>
+                        <li class="ul-list">Swiggy One</li>
+                        <li class="ul-list">Swiggy Corporate</li>
+                        <li class="ul-list">Swiggy Instamart</li>
+                    </ul>
+
+                </div>
+
+
+
+
+                <div class="footer-contact-area">
+
+                    <div class="contact-title">CONTACT</div>
+
+                    <ul>
+                        <li class="contact-list">Help & Support</li>
+                        <li class="contact-list">Partner with us</li>
+                        <li class="contact-list">Ride with us</li>
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="footer-legal-area">
+
+                    <div class="legal-title">LEGAL</div>
+
+                    <div>
+                    <ul>
+                        <li class="legal-list">Terms & Conditions</li>
+                        <li class="legal-list">Refund & Cancellation</li>
+                        <li class="legal-list">Privacy Policy</li>
+                        <li class="legal-list">Cookie Policy</li>
+                        <li class="legal-list">Offer Terms</li>
+                        <li class="legal-list">Phishing & Fraud</li>
+                    </ul></div>
+
+                </div>
+
+
+
+
+
+                <div class="footer-applink-area">
+
+                    <div class="footer-app-img">
+                        <img src="./Images/apple1.webp" width="70%" alt="">
+
+                        <img class="playbtn-img" src="./Images/play1.webp" width="70%" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+
+
+            <!-- 2nd footer part -->
+
+            <div class="footer-second-area">
+
+                <h4>WE DELIVER TO</h4>
+
+                <div class="footer-location-area">
+
+                    <div class="footer-location-1">
+
+                        <ul>
+                            <li class="footer-list">Abohar</li>
+                            <li class="footer-list">Adilabad</li>
+                            <li class="footer-list">Adityapur</li>
+                            <li class="footer-list">Adoni</li>
+                            <li class="footer-list">Agartala</li>
+                            <li class="footer-list">Agra</li>
+                            <li class="footer-list">Ahmedabad</li>
+                            <li class="footer-list">Ahmednagar</li>
+                            <li class="footer-list">Aizawl</li>
+                            <li class="footer-list">Ajmer</li>
+                            <li class="footer-list">Abohar</li>
+                            <li class="footer-list">Adilabad</li>
+                            <li class="footer-list">Adityapur</li>
+                            <li class="footer-list">Adoni</li>
+                            <li class="footer-list">Agartala</li>
+                            <li class="footer-list">Agra</li>
+                            <li class="footer-list">Ahmedabad</li>
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Footer List 2 -->
+
+
+                    <div class="footer-location-2">
+
+                        <ul>
+                            <li class="footer-list">Darbhanga</li>
+                            <li class="footer-list">Darjeeling</li>
+                            <li class="footer-list">Daund</li>
+                            <li class="footer-list">Dausa</li>
+                            <li class="footer-list">Davanagere</li>
+                            <li class="footer-list">Dehradun</li>
+                            <li class="footer-list">Dehri</li>
+                            <li class="footer-list">Delhi</li>
+                            <li class="footer-list">Deoghar</li>
+                            <li class="footer-list">Dewas</li>
+                            <li class="footer-list">Darbhanga</li>
+                            <li class="footer-list">Darjeeling</li>
+                            <li class="footer-list">Daund</li>
+                            <li class="footer-list">Dausa</li>
+                            <li class="footer-list">Davanagere</li>
+                            <li class="footer-list">Dehradun</li>
+                            <li class="footer-list">Dehri</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-location-3">
+
+                        <ul>
+                        <li class="footer-list">Kharagpur</li>
+                        <li class="footer-list">Khargone_perm_closed_8june22</li>
+                        <li class="footer-list">Khopoli</li>
+                        <li class="footer-list">Kishanganj</li>
+                        <li class="footer-list">Kishangarh</li>
+                        <li class="footer-list">Kochi</li>
+                        <li class="footer-list">Kodaikanal</li>
+                        <li class="footer-list">Kohima</li>
+                        <li class="footer-list">Kolar</li>
+                        <li class="footer-list">Kolhapur</li>
+                        <li class="footer-list">Kharagpur</li>
+                        <li class="footer-list">Khargone_perm_closed_8june22</li>
+                        <li class="footer-list">Khopoli</li>
+                        <li class="footer-list">Kishanganj</li>
+                        <li class="footer-list">Kishangarh</li>
+                        <li class="footer-list">Kochi</li>
+                        <li class="footer-list">Kodaikanal</li>
+                    </ul>
+                       
+
+
+
+
+                    </div>
+
+                    <div class="footer-location-4">
+
+                        <ul>
+                            <li class="footer-list">Port-blair</li>
+                            <li class="footer-list">Pratapgarh</li>
+                            <li class="footer-list">Proddatur</li>
+                            <li class="footer-list">Pudukkottai</li>
+                            <li class="footer-list">Pune</li>
+                            <li class="footer-list">Puri</li>
+                            <li class="footer-list">Purnea</li>
+                            <li class="footer-list">Purulia</li>
+                            <li class="footer-list">Pusad</li>
+                            <li class="footer-list">Puttur</li>
+                            <li class="footer-list">Puttur-karnataka</li>
+                            <li class="footer-list">Rae-bareli</li>
+                            <li class="footer-list">Raghunathpur</li>
+                            <li class="footer-list">Raichur</li>
+                            <li class="footer-list">Raiganj</li>
+                            <li class="footer-list">Raigarh</li>
+                            <li class="footer-list">Raipur</li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+
+                <!-- 3rd Footer -->
+
+                <div class="third-footer-3">
+                <hr>
+
+                <div class="footer-copyright-area">
+
+                    <div class="footer copyright-logo">
+                        
+                        <img class="swiggy-bottom-logo" src="./Images/swiggy bottom logo.webp" alt="">
+
+                    </div>
+
+                    <div class="footer copyright-section">
+
+                        <span class="copyright">© 2022 Swiggy</span>
+
+                    </div>
+
+                    <div class="footer copyright-link">
+
+                        <!-- <ul class="last-logo"> -->
+                            <!-- <li class="f-link">https://fb.com</li> -->
+                            <img class="last-logo" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"  height="40px" alt="">
+                            <img class="last-logo" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd" height="40px" alt="">
+                            <img class="last-logo" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh" height="40px" alt="">
+                            <img class="last-logo" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"   height="40px" alt="">
+                        <!-- </ul> -->
+
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    
+</body>
+
+</html>
